@@ -90,11 +90,11 @@ const Navbar = () => {
         <Link href='https://github.com/hasanarpat' target='_blank'>
           <Image src='/github.png' alt='' width={24} height={24} />
         </Link>
-        <Link href='https://github.com/hasanarpat' target='_blank'>
-          <Image src='/dribbble.png' alt='' width={24} height={24} />
-        </Link>
-        <Link href='https://github.com/hasanarpat' target='_blank'>
+        <Link href='https://www.linkedin.com/in/hasan-arpat/' target='_blank'>
           <Image src='/linkedin.png' alt='' width={24} height={24} />
+        </Link>
+        <Link href='https://hasanarpat.github.io/' target='_blank'>
+          <Image src='/crow.png' alt='' width={24} height={24} />
         </Link>
         <Link href='https://github.com/hasanarpat' target='_blank'>
           <Image src='/instagram.png' alt='' width={24} height={24} />

@@ -2,6 +2,7 @@
 import Brain from '@/components/brain';
 import { motion, useScroll, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 const About = () => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -33,15 +34,18 @@ const About = () => {
           <div className='flex flex-col gap-12 justify-center'>
             <h1 className='font-bold text-2xl'>BIOGRAPHY</h1>
             <p className='text-lg'>
-              Eu esse labore nostrud nulla aliqua esse ex. Tempor minim
-              consectetur incididunt mollit enim adipisicing reprehenderit
-              consequat esse laboris ut. Elit id labore dolor ea et ut laboris.
-              Enim adipisicing reprehenderit consequat esse laboris ut. Elit id
-              labore dolor ea et ut laboris.
+              I&apos;m a Computer Engineering student at Mersin University and a
+              Junior Front-End Engineer. My graduate is at June 2024. I have
+              been developing web apps with React for nearly 2 years and half of
+              them with NextJS. Listening and playing music on a very large
+              scale. Trying to play every instrument i can found. A metalhead
+              but an ethnic music player at the same time. Anatolian Rock
+              enjoyer. I&apos;m a real bookworm and have love for Math and
+              Physics. Also love making IOT and some arduino based projects.
             </p>
-            <span className='italic'>
-              Tempor tempor tempor elit eiusmod elit fugiat.
-            </span>
+            <Link href='https://github.com/hasanarpat' className='italic'>
+              You can find my repos on <strong>Github</strong>.
+            </Link>
             <div className='text-xl font-extralight italic self-end'>
               Hasan Arpat
             </div>
@@ -79,7 +83,7 @@ const About = () => {
               SKILLS
             </motion.h1>
             <motion.div
-              className='flex flex-wrap gap-4'
+              className='flex flex-wrap gap-4 '
               initial={{ x: '-300px' }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
@@ -103,31 +107,19 @@ const About = () => {
                 Tailwind CSS
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
+                Material UI
+              </div>
+              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 MongoDB
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                PostgreSQL
+                MySQL
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Node.js
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                Nest.js
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Express.js
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                Spring Boot
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                GraphQL
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                Apollo
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                Redux
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Framer Motion
@@ -136,19 +128,10 @@ const About = () => {
                 Three.js
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                WebGL
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Webpack
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Vite
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                Docker
-              </div>
-              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
-                AWS
               </div>
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Firebase
@@ -159,6 +142,33 @@ const About = () => {
               <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
                 Figma
               </div>
+              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
+                Unit/E2E Testing
+              </div>
+              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
+                Cypress
+              </div>
+              <div className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>
+                Playwright
+              </div>
+              <Link
+                href='https://www.freecodecamp.org/certification/fcc95c20e59-8243-45a0-a7c4-5c2cf030104e/responsive-web-design'
+                className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'
+              >
+                Responsive Web Design
+              </Link>
+              <Link
+                href='https://www.udemy.com/certificate/UC-7fc081a9-dc88-4637-938d-a58b6794078c/'
+                className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'
+              >
+                Web Developer Bootcamp
+              </Link>
+              <Link
+                href='https://www.efset.org/cert/5nQEZy'
+                className='rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'
+              >
+                English - Proficient
+              </Link>
             </motion.div>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -204,21 +214,14 @@ const About = () => {
                   <div className='w-1/3 '>
                     {/* JOB TITLE */}
                     <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>
-                      Senior JavaScript Engineer
+                      Let&apos;s work together!
                     </div>
                     {/* JOB DESC */}
-                    <div className='p-3 text-sm italic'>
-                      I led web development, offering expertise in JavaScript
-                      frameworks.{' '}
-                    </div>
+                    <div className='p-3 text-sm italic'></div>
                     {/* JOB DATE */}
-                    <div className='p-3 text-red-400 text-sm font-semibold'>
-                      2024 - Present
-                    </div>
+                    <div className='p-3 text-red-400 text-sm font-semibold'></div>
                     {/* JOB COMPANY */}
-                    <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>
-                      Apple
-                    </div>
+                    <div className='p-1 rounded bg-transparent text-sm font-semibold w-fit'></div>
                   </div>
                   {/* CENTER */}
                   <div className='w-1/6 flex justify-center'>
@@ -247,20 +250,20 @@ const About = () => {
                   <div className='w-1/3 '>
                     {/* JOB TITLE */}
                     <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>
-                      Senior React Developer
+                      Intern Frontend Engineer
                     </div>
                     {/* JOB DESC */}
                     <div className='p-3 text-sm italic'>
-                      I spearheaded React-based application development,
-                      leveraging advanced skills.{' '}
+                      I have been on React-based application development,
+                      leveraging my skills and experiencing more.
                     </div>
                     {/* JOB DATE */}
                     <div className='p-3 text-red-400 text-sm font-semibold'>
-                      2019 - 2024{' '}
+                      2023 Sep - 2024{' '}
                     </div>
                     {/* JOB COMPANY */}
                     <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>
-                      Microsoft
+                      Radity GmbH
                     </div>
                   </div>
                 </div>
@@ -270,16 +273,17 @@ const About = () => {
                   <div className='w-1/3 '>
                     {/* JOB TITLE */}
                     <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>
-                      Freelancer{' '}
+                      Computer Engineering Student
                     </div>
                     {/* JOB DESC */}
                     <div className='p-3 text-sm italic'>
-                      I provided web solutions, applying a range of technologies
-                      to address client requirements.{' '}
+                      Equal to Computer Science Degree in Turkey. Took all the
+                      lessons related to Computer Math and software development
+                      succesfully!
                     </div>
                     {/* JOB DATE */}
                     <div className='p-3 text-red-400 text-sm font-semibold'>
-                      2010 - 2019{' '}
+                      2017 - 2024
                     </div>
                   </div>
                   {/* CENTER */}
